@@ -7,6 +7,55 @@
   <title>Contact Page by AlcidesMa</title>
 </head>
 <body>
-  
+    <header>
+     <img src="assets/contact-form-icon.svg" alt="">
+    </header>
+
+    <main>
+      <section class="info">
+        <h1>Interested in our business pricing?</h1>
+        <p>Fill out the form to view details and we’ll contact you as soon as possible.</p>
+      </section>
+      <section class="contact">
+        <form action="">
+          <div class="form_group">
+            <div class="form_item">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Ethan Johnson">
+            </div>
+            <div class="form_item">
+              <label for="co-email">Company Email</label>
+              <input id="co-email" name="co-email" type="email" placeholder="ethan@johnson.com">
+            </div>
+          </div>
+          <div class="form_group">
+            <div class="form_item">
+              <label for="co-size">Company Size</label>
+              <select id="co-size" name="co-size" placeholder="Ethan Johnson">
+                <option>less than 50 employees</option>
+                <option selected>50-100 employees</option>
+                <option>more than 100 employees</option>
+              </select>
+            </div>
+            <div class="form_item">
+              <label for="co-subject">Subject</label>
+              <select id="co-subject" name="co-subject"  placeholder="Ethan Johnson">
+                <option selected>Building Landing pages</option>
+                <option>Building Landing pages</option>
+                <option>Building Landing pages</option>
+              </select>
+            </div>
+          </div>
+          <div class="form_item">
+            <label for="message">Message</label>
+            <textarea cols="4" rows="4"  id="message" name="message">50-100 employees
+            </textarea>
+          </div>
+          <div class="form_item">
+            <input type="submit" value="Contact Sales">
+          </div>
+        </form>
+      </section>
+    </main>
 </body>
 </html>

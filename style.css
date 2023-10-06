@@ -1,0 +1,119 @@
+@font-face {
+  font-family: vietnam;
+  src: url(assets/font/BeVietnamPro.ttf);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: vietnam;
+  
+}
+
+body{
+  color: #fff;
+  background-image: url(assets/bg-image.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 10px 30px;
+  width: 100vw;
+  height: 100vh;
+}
+
+header> img{
+  width: 70px;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  text-align: center;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:10px
+}
+
+.info > h1 {
+  font-size: 32px;
+  width: 18ch;
+}
+.info > p {
+  font-size: 16px;
+  width: 30ch;
+}
+
+.contact{
+  
+  background: #CDD5E040;
+  border-radius: 15px;
+  padding: 30px;
+  width: 400px;
+}
+
+.contact > form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+label{
+  font-size: 14px;
+}
+
+.form_item{
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  gap: 5px;
+}
+
+.form_item> input,  .form_item > select, .form_item >textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+input[type="submit"]{
+  font-size: 1rem;
+  font-weight: 700;
+  color:#4036A9
+}
+.form_group{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (min-width:650px) {
+  .form_group{
+    flex-direction: row;
+    }
+    .form_group > .form_item {
+    width: 50%;
+  }
+  .contact{
+    width: 80%;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .info > h1 {
+    font-size: 64px;
+    width: 18ch;
+  }
+
+  .info > p {
+    font-size: 32px;
+    width: 30ch;
+  }
+}
